@@ -8,7 +8,7 @@ public class Enunciado1 {
 
         String text = JOptionPane.showInputDialog("", null);
         String caracter = text.trim();                          //eliminamos caracteres en blanco al inicio y final
-        String[] arrayCaracter = caracter.split(" ");
+        String[] arrayCaracter = caracter.split(" ");           //creamoss array separado por espacio
         int suma = 0;
         for (int i = 0; i < arrayCaracter.length; i++) {
             suma += funcionTry(arrayCaracter[i]);
@@ -16,6 +16,8 @@ public class Enunciado1 {
         System.out.println("suma: " + suma);
     }
 
+    
+    //funcion para convertir caracter a numero
     public static int funcionTry(String a) {
         try {
             Long num = Long.parseLong(a);       //capturamos el dato
